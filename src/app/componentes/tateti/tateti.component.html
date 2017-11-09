@@ -1,0 +1,87 @@
+<div class="container" style="text-align:center">
+    <div style="background:rgb(17, 164, 209);border-radius:4px">
+        <h1>
+            TA - TE - TI
+        </h1>
+        <h2>{{whogoesnow}}</h2>
+        <h2>{{ganador}}</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--<input type="button" mat-button name="b1" value="{{value1}}" (click)="change_b1()">-->
+
+    <button mat-raised-button color="" *ngIf="value1=='  -  '" (click)="change_b1()" [disabled]="ganador!=null">{{value1}}</button>
+
+    <button mat-raised-button color="warn" *ngIf="value1=='  O  '" [disabled]="ganador!=null">{{value1}}</button>
+
+    <button mat-raised-button color="accent" *ngIf="value1=='  X  '" [disabled]="ganador!=null">{{value1}}</button>
+
+
+    <button mat-raised-button color="" [disabled]="ganador!=null" (click)="change_b2()" *ngIf="value2=='  -  '">{{value2}}</button>
+
+
+    <button mat-raised-button color="warn" *ngIf="value2=='  O  '" [disabled]="ganador!=null">{{value2}}</button>
+
+
+    <button mat-raised-button color="accent" *ngIf="value2=='  X  '" [disabled]="ganador!=null">{{value2}}</button>
+
+
+
+    <button mat-raised-button color="" (click)="change_b3()" *ngIf="value3=='  -  '" [disabled]="ganador!=null">{{value3}}</button>
+
+    <button mat-raised-button color="warn" *ngIf="value3=='  O  '" [disabled]="ganador!=null">{{value3}}</button>
+
+    <button mat-raised-button color="accent" *ngIf="value3=='  X  '" [disabled]="ganador!=null">{{value3}}</button>
+    <br>
+
+    <button mat-raised-button color="" (click)="change_b4()" *ngIf="value4=='  -  '" [disabled]="ganador!=null">{{value4}}</button>
+
+    <button mat-raised-button color="warn" *ngIf="value4=='  O  '" [disabled]="ganador!=null">{{value4}}</button>
+
+    <button mat-raised-button color="accent" *ngIf="value4=='  X  '" [disabled]="ganador!=null">{{value4}}</button>
+
+
+    <button mat-raised-button color="" (click)="change_b5()" *ngIf="value5=='  -  '" [disabled]="ganador!=null">{{value5}}</button>
+
+
+    <button mat-raised-button color="warn" *ngIf="value5=='  O  '" [disabled]="ganador!=null">{{value5}}</button>
+
+
+    <button mat-raised-button color="accent" *ngIf="value5=='  X  '" [disabled]="ganador!=null">{{value5}}</button>
+
+
+    <button mat-raised-button color="" (click)="change_b6()" *ngIf="value6=='  -  '" [disabled]="ganador!=null">{{value6}}</button>
+
+    <button mat-raised-button color="warn" *ngIf="value6=='  O  '" [disabled]="ganador!=null">{{value6}}</button>
+    <button mat-raised-button color="accent" *ngIf="value6=='  X  '" [disabled]="ganador!=null">{{value6}}</button>
+    <br>
+    <button mat-raised-button color="" *ngIf="value7=='  -  '" (click)="change_b7()" [disabled]="ganador!=null">{{value7}}</button>
+    <button mat-raised-button color="warn" *ngIf="value7=='  O  '" [disabled]="ganador!=null">{{value7}}</button>
+    <button mat-raised-button color="accent" *ngIf="value7=='  X  '" [disabled]="ganador!=null">{{value7}}</button>
+
+
+
+    <button mat-raised-button color="" *ngIf="value8=='  -  '" [disabled]="ganador!=null" (click)="change_b8()">{{value8}}</button>
+
+
+    <button mat-raised-button color="warn" *ngIf="value8=='  O  '" [disabled]="ganador!=null">{{value8}}</button>
+
+
+    <button mat-raised-button color="accent" *ngIf="value8=='  X  '" [disabled]="ganador!=null">{{value8}}</button>
+
+
+    <button mat-raised-button color="" *ngIf="value9=='  -  '" (click)="change_b9()" [disabled]="ganador!=null">{{value9}}</button>
+
+    <button mat-raised-button color="warn" *ngIf="value9=='  O  '" [disabled]="ganador!=null">{{value9}}</button>
+
+    <button mat-raised-button color="accent" *ngIf="value9=='  X  '" [disabled]="ganador!=null">{{value9}}</button>
+
+    <br>
+    <br>
+    <br>
+    <button mat-raised-button color="accent" (click)="variables()">Nuevo Partido</button>
+    <br>
+    <br>
+</div>
